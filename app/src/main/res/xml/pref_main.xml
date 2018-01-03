@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+
+        <!--CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_upload_over_wifi"
+            android:summary="@string/summary_upload_over_wifi"
+            android:title="@string/title_auto_upload" /-->
+
+        <ListPreference
+            android:defaultValue="3"
+            android:dialogTitle="@string/title_max_login"
+            android:entries="@array/pref_max_login_entries"
+            android:entryValues="@array/pref_max_login_values"
+            android:key="@string/key_max_login"
+            android:summary="@string/summary_max_login"
+            android:title="@string/title_max_login" />
+
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory android:title="@string/pref_header_about">
+
+        <Preference
+            android:selectable="false"
+            android:summary="@string/summary_about" />
+
+        <Preference
+            android:summary=""
+            android:key="version"
+            android:title="@string/title_version" />
+
+        <Preference
+            android:key="@string/key_send_feedback"
+            android:summary="@string/summary_support"
+            android:title="@string/title_send_feedback" />
+
+        <!-- preference opens url in browser -->
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
